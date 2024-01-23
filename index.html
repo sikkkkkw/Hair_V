@@ -12,10 +12,10 @@
   </head>
   <body>
     <header>
+      <div id="logohead">
+        <img src="./로고.png" alt="Logo" />
+      </div>
       <nav>
-        <div id="logohead">
-          <img src="./로고.png" alt="Logo" />
-        </div>
         <p id="contact_number">상담전화 : 0507-1376-7738</p>
         <input type="checkbox" id="toggle_menu_btn" />
         <label id="toggle" for="toggle_menu_btn">
@@ -24,30 +24,31 @@
 
         <ul id="toggle_menu">
           <li><a href="#">헤어 </a></li>
-          <li><a href="#"> 오시는 길 </a></li>
-          <li><a href="#">Lorem ipsum</a></li>
+          <li><a href="#"> 사진 </a></li>
+          <li><a href="#">동영상</a></li>
+          <li><a href="#">오시는 길</a></li>
         </ul>
       </nav>
     </header>
     <div id="pxd">
-    <div id="content">
-      <div class="flex1"><h3>헤어</h3>
-        <button id="loadMore">더 보기</button></div>
-      
-      <div class="gallery" >
-        <img src="./가격.jpg" alt="Haircut 1" />
-        <img src="./가격.jpg" alt="Haircut 2" />
-        <img src="./가격.jpg" alt="Haircut 3" />
-        <img src="./가격.jpg" alt="Haircut 4" />
-        <img src="./가격.jpg" alt="Haircut 5" />
+      <div id="content">
+        <div class="flex1">
+          <h3>헤어</h3>
+          <button id="loadMore">더 보기</button>
+        </div>
+        <div class="gallery">
+          <img src="./가격.jpg" alt="Haircut 1" />
+          <img src="./가격.jpg" alt="Haircut 2" />
+          <img src="./가격.jpg" alt="Haircut 3" />
+          <img src="./가격.jpg" alt="Haircut 4" />
+          <img src="./가격.jpg" alt="Haircut 5" />
+        </div>
       </div>
-      
+      <div id="mapcenter">
+        <h3>오시는 길</h3>
+        <div id="map"></div>
+      </div>
     </div>
-    <div id="mapcenter">
-      <h3>오시는 길</h3>
-      <div id="map"></div>
-    </div>
-  </div>
     <footer></footer>
   </body>
   <script src="./map.js"></script>

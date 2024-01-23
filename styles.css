@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   height: 60px;
+  overflow: hidden;
 }
 #logohead img {
   margin-top: 4px;
@@ -110,19 +111,24 @@ section {
   margin-right: auto;
 }
 /* 갤러리 */
-#content{
+#content {
   display: flex;
   flex-direction: column;
 }
-#content img{
+#content img {
   width: 100px;
 }
-.flex1{
+.flex1 {
   display: flex;
   justify-content: space-between;
 }
+
 /* 태블릿 PC모드일때 */
 @media screen and (min-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
   #content {
     height: 500px;
     display: flex;
@@ -140,7 +146,6 @@ section {
   #content #content3 {
     width: 100%;
   }
-  /* 테스트 */
   header nav label#toggle {
     display: none; /* PC 모드에서 토글메뉴 숨김 */
   }
@@ -164,7 +169,6 @@ section {
 }
 /* PC모드일때 */
 @media screen and (min-width: 960px) {
-  
   header nav label#toggle {
     display: none; /* PC 모드에서 토글메뉴 숨김 */
   }
@@ -185,10 +189,15 @@ section {
     line-height: 60px;
     color: #fff;
   }
+
   /* map */
-  
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
   #map {
-    width: 80%;
+    width: 100%;
     height: 400px;
     margin-top: 10px;
   }
@@ -199,17 +208,26 @@ section {
     align-items: center;
   }
   #mapcenter h3 {
-    
     top: 60px;
-    margin-left: 130px;
+    margin-left: 30px;
     text-align: left;
     margin-right: auto;
   }
-  #pxd{
+  #pxd {
     width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
   }
 }
