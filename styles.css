@@ -20,6 +20,7 @@ html.dark a {
 #logohead {
   /* background-color: #000; */
   display: flex;
+  margin: auto;
   justify-content: center;
   height: 60px;
   overflow: hidden;
@@ -107,7 +108,7 @@ section {
 }
 /* map */
 #map {
-  width: 600px;
+  width: 100%;
   height: 400px;
   margin-top: 10px;
 }
@@ -133,6 +134,74 @@ section {
 .flex1 {
   display: flex;
   justify-content: space-between;
+}
+/* 푸터 */
+footer {
+  background-color: #222; /* 푸터 배경색 */
+  color: #fff; /* 푸터 텍스트 색상 */
+  padding: 30px; /* 푸터 패딩 */
+}
+
+#footerpxd {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  /* flex-direction: column; 세로 정렬을 위한 flex-direction 속성 추가 */
+  justify-content: space-around; /* 주변 여백을 위한 justify-content 속성 추가 */
+  align-items: center; /* 가운데 정렬을 위한 align-items 속성 추가 */
+  
+}
+
+#footerimg {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 로고를 세로 가운데 정렬을 위한 align-items 속성 추가 */
+}
+
+/* 로고 이미지 스타일 */
+.img1 {
+  width: 50px; /* 로고 이미지 크기 조절 */
+  height: auto;
+  margin-right: 10px;
+}
+.img2{
+  width: 17px;
+  margin-right: 5px;
+  height: auto;
+}
+/* 주소 스타일 */
+#footer-address {
+  text-align: center;
+}
+
+/* 다크모드 스타일 */
+.dark footer {
+  background-color: #121212; /* 다크모드에서의 푸터 배경색 */
+  color: #bbb; /* 다크모드에서의 푸터 텍스트 색상 */
+}
+
+/* 다크모드 */
+#darkModeToggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #222;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#lightModeIcon {
+  display: none;
+}
+
+#darkModeIcon {
+  display: inline-block; /* 초기 상태에서는 darkModeIcon을 보이도록 설정 */
+}
+/* 선택사항: 호버 효과를 위한 스타일 추가 */
+#darkModeToggle:hover {
+  background-color: #444;
 }
 
 /* 태블릿 PC모드일때 */
@@ -214,7 +283,10 @@ section {
     margin-top: 10px;
   }
   #mapcenter {
+    width: 1300px;
+    height: 400px;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -227,6 +299,15 @@ section {
   }
   #pxd {
     width: 1300px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #pxd3 {
+    width: 1300px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -241,5 +322,28 @@ section {
   .gallery img {
     width: 100%;
     height: auto;
+  }
+  /* 다크모드 */
+  #darkModeToggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #lightModeIcon {
+    display: none;
+  }
+  
+  #darkModeIcon {
+    display: inline-block; /* 초기 상태에서는 darkModeIcon을 보이도록 설정 */
+  }
+  /* 선택사항: 호버 효과를 위한 스타일 추가 */
+  #darkModeToggle:hover {
+    background-color: #444;
   }
 }
