@@ -112,6 +112,14 @@ section {
 /* 갤러리 */
 #content{
   display: flex;
+  flex-direction: column;
+}
+#content img{
+  width: 100px;
+}
+.flex1{
+  display: flex;
+  justify-content: space-between;
 }
 /* 태블릿 PC모드일때 */
 @media screen and (min-width: 768px) {
@@ -156,6 +164,7 @@ section {
 }
 /* PC모드일때 */
 @media screen and (min-width: 960px) {
+  
   header nav label#toggle {
     display: none; /* PC 모드에서 토글메뉴 숨김 */
   }
@@ -177,6 +186,7 @@ section {
     color: #fff;
   }
   /* map */
+  
   #map {
     width: 80%;
     height: 400px;
@@ -189,9 +199,17 @@ section {
     align-items: center;
   }
   #mapcenter h3 {
-    margin-top: 10px;
+    
+    top: 60px;
     margin-left: 130px;
     text-align: left;
     margin-right: auto;
+  }
+  #pxd{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
