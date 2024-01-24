@@ -106,6 +106,48 @@ section {
   margin-top: 12px; /* 필요한 경우 간격 조정 */
   margin-right: 10px; /* 필요한 경우 간격 조정 */
 }
+/* 이미지파트 */
+.voice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer {
+  width: 100%;
+  max-width: 62.5rem;
+  min-width: 20rem;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.imgheading {
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  word-break: keep-all;
+  margin-bottom: 1rem;
+}
+.image-grid img {
+  width: 200px;
+  height: 200px;
+}
+.imgheading--line {
+  display: inline-block;
+  padding-bottom: 0.9375rem;
+  border-bottom: 1px solid #ef233c;
+}
+
+.imgcontent {
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-weight: 700;
+  word-break: keep-all;
+  flex: 0;
+  overflow: hidden;
+}
+
 /* map */
 #map {
   width: 100%;
@@ -123,61 +165,103 @@ section {
   text-align: left;
   margin-right: auto;
 }
-/* 갤러리 */
-#content {
-  display: flex;
-  flex-direction: column;
+
+/* 푸터 */
+.footer {
+  padding: 2.5rem 0;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
-#content img {
-  width: 100px;
+.footerimg {
+  width: 60px;
+  height: 60px;
 }
-.flex1 {
+.footer-container {
+  margin: 0 auto;
+  /* padding: 2.5rem; */
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-/* 푸터 */
-footer {
-  background-color: #222; /* 푸터 배경색 */
-  color: #fff; /* 푸터 텍스트 색상 */
-  padding: 30px; /* 푸터 패딩 */
+.footer-container > * {
+  width: calc(
+    33.33% - 20px
+  ); /* 예를 들어, 각 요소 간의 간격을 고려하여 33.33%로 지정 */
+  margin-right: 20px; /* 각 요소 간의 간격 설정 */
+  margin-bottom: 20px; /* 각 요소의 아래 간격 설정 */
 }
 
-#footerpxd {
-  width: 100%;
-  height: 100px;
+/* 마지막 요소에는 오른쪽 마진 제거 */
+.footer-container > *:last-child {
+  margin-right: 0;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  margin-top: -20px;
+  margin-bottom: 1.5rem;
+}
+.logo-container {
   display: flex;
-  /* flex-direction: column; 세로 정렬을 위한 flex-direction 속성 추가 */
-  justify-content: center; /* 주변 여백을 위한 justify-content 속성 추가 */
-  align-items: center; /* 가운데 정렬을 위한 align-items 속성 추가 */
-  
+  flex-direction: column;
+  align-items: center; /* 수직 정렬 */
+  justify-content: space-around;
 }
-
-#footerimg {
-  width: 100%;
-  display: flex;
-  justify-content: space-between; /* 로고를 세로 가운데 정렬을 위한 align-items 속성 추가 */
-}
-
-/* 로고 이미지 스타일 */
-.img1 {
-  width: 50px; /* 로고 이미지 크기 조절 */
-  height: auto;
-  margin-right: 10px;
-}
-.img2{
-  width: 17px;
-  margin-right: 5px;
-  height: auto;
-}
-/* 주소 스타일 */
-#footer-address {
+.footer-address {
   text-align: center;
+  margin-top: 1rem;
 }
-#footericon{
-  display: grid;
-  grid-template-columns: repeat(4,60px);
-  grid-template-rows: repeat(2,50px);
-  gap: 10px;
+
+.footer-address span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.address__telephone,
+.address__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-sns {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-sns-heading {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sns-wrap {
+  display: flex;
+  gap: 1rem;
+}
+
+.sns-wrap a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.a11yHidden img {
+  width: 20px;
+  height: 20px;
+}
+.img2 {
+  width: 15px;
+  margin-right: 2px;
+  height: auto;
 }
 
 /* 다크모드 스타일 */
@@ -210,52 +294,8 @@ footer {
   background-color: #444;
 }
 
-/* 태블릿 PC모드일때 */
-@media screen and (min-width: 768px) {
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  #content {
-    height: 500px;
-    display: flex;
-  }
-  #c {
-    position: relative;
-    width: 100%;
-  }
-
-  #content1,
-  #content2 {
-    width: 50%;
-  }
-
-  #content #content3 {
-    width: 100%;
-  }
-  header nav label#toggle {
-    display: none; /* PC 모드에서 토글메뉴 숨김 */
-  }
-  header nav ul#toggle_menu {
-    /*PC 모드에서 주메뉴 보이게 하기 */
-    display: block flex !important;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-around;
-    height: 60px !important;
-    background-color: #000;
-  }
-  header nav ul#toggle_menu li {
-    padding: 0px;
-    border-bottom: 0;
-  }
-  header nav ul#toggle_menu a {
-    line-height: 60px;
-    color: #fff;
-  }
-}
 /* PC모드일때 */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   header nav label#toggle {
     display: none; /* PC 모드에서 토글메뉴 숨김 */
   }
@@ -278,18 +318,15 @@ footer {
   }
 
   /* map */
-  .flex1 {
-    display: flex;
-    justify-content: space-between;
-  }
 
   #map {
     width: 100%;
     height: 400px;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   #mapcenter {
-    width: 1300px;
+    width: 1200px;
     height: 400px;
     display: flex;
     margin: 0 auto;
@@ -304,7 +341,7 @@ footer {
     margin-right: auto;
   }
   #pxd {
-    width: 1300px;
+    width: 1200px;
     height: 400px;
     margin: 0 auto;
     display: flex;
@@ -312,7 +349,7 @@ footer {
     flex-direction: column;
   }
   #pxd3 {
-    width: 1300px;
+    width: 1200px;
     height: 400px;
     margin: 0 auto;
     display: flex;
@@ -340,16 +377,120 @@ footer {
     cursor: pointer;
     z-index: 999;
   }
-  
+
   #lightModeIcon {
     display: none;
   }
-  
+
   #darkModeIcon {
     display: inline-block; /* 초기 상태에서는 darkModeIcon을 보이도록 설정 */
   }
   /* 선택사항: 호버 효과를 위한 스타일 추가 */
   #darkModeToggle:hover {
     background-color: #444;
+  }
+  /* 그리드 */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .image-grid img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* 푸터 */
+  .footer {
+    padding: 3.5rem 0;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직 정렬 */
+    justify-content: space-around;
+  }
+  .footerimg {
+    width: 110px;
+    height: 110px;
+    margin-left: 40px;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-heading {
+    font-size: 1.5rem;
+    margin-top: -40px;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-address {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .footer-address span {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: 60px;
+  }
+
+  .address__telephone,
+  .address__link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-sns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer-sns-heading {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sns-wrap {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .sns-wrap a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .footer-copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    margin-left: 50px;
+  }
+
+  .a11yHidden img {
+    width: 20px;
+    height: 20px;
+  }
+  .img2 {
+    width: 15px;
+    margin-right: 2px;
+    height: auto;
   }
 }
