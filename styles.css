@@ -147,15 +147,15 @@ footer {
   height: 100px;
   display: flex;
   /* flex-direction: column; 세로 정렬을 위한 flex-direction 속성 추가 */
-  justify-content: space-around; /* 주변 여백을 위한 justify-content 속성 추가 */
+  justify-content: center; /* 주변 여백을 위한 justify-content 속성 추가 */
   align-items: center; /* 가운데 정렬을 위한 align-items 속성 추가 */
   
 }
 
 #footerimg {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center; /* 로고를 세로 가운데 정렬을 위한 align-items 속성 추가 */
+  justify-content: space-between; /* 로고를 세로 가운데 정렬을 위한 align-items 속성 추가 */
 }
 
 /* 로고 이미지 스타일 */
@@ -172,6 +172,12 @@ footer {
 /* 주소 스타일 */
 #footer-address {
   text-align: center;
+}
+#footericon{
+  display: grid;
+  grid-template-columns: repeat(4,60px);
+  grid-template-rows: repeat(2,50px);
+  gap: 10px;
 }
 
 /* 다크모드 스타일 */
