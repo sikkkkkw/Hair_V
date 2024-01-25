@@ -1,124 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>헤어브이</title>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9a6d2d3f9adcf99e382520679294a41e"></script>
-</head>
-<body>
-  <header>
-    <div id="logohead">
-      <img src="./로고.png" alt="Logo" />
-    </div>
-    <nav>
-      <p id="contact_number">상담전화 : 0507-1376-7738</p>
-      <input type="checkbox" id="toggle_menu_btn" />
-      <label id="toggle" for="toggle_menu_btn">
-        <img id="imgs" src="but_toggle.png" alt="toggle menu button" />
-      </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>헤어브이</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9a6d2d3f9adcf99e382520679294a41e"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="logohead">
+        <img src="./로고.png" alt="Logo" />
+      </div>
+      <nav>
+        <p id="contact_number">상담전화 : 0507-1376-7738</p>
+        <input type="checkbox" id="toggle_menu_btn" />
+        <label id="toggle" for="toggle_menu_btn">
+          <img id="imgs" src="but_toggle.png" alt="toggle menu button" />
+        </label>
 
-      <ul id="toggle_menu">
-        <li><a href="#">소개글 </a></li>
-        <li><a href="#"> 사진 </a></li>
-        <li><a href="#">동영상</a></li>
-        <li><a href="#">오시는 길</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="imgpxd">
+        <ul id="toggle_menu">
+          <li><a href="#">소개글 </a></li>
+          <li><a href="#"> 사진 </a></li>
+          <li><a href="#">동영상</a></li>
+          <li><a href="#">오시는 길</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="voice">
       <div class="imgcontainer">
+        <h2 class="imgheading headAnimation headingAnimation">
+          <span class="imgheading--line" tabindex="0">사진</span>
+        </h2>
+        <q tabindex="0">
+          안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
+          충분한 상담 후 고객님이 원하는 포인트를 정확히 캐치하고 제안해
+          드릴게요 !
+        </q>
+      </div>
+      <div class="image-flex-scrollable" id="imageScroll">
+        <div class="image-flex" id="imageFlex">
+          <img
+            src="./가격.jpg"
+            alt="Image 1"
+            onclick="openModal('./가격.jpg')"
+          />
+          <img
+            src="./가게.jpg"
+            alt="Image 2"
+            onclick="openModal('./가게.jpg')"
+          />
+          <img
+            src="./헤어사진1.jpg"
+            alt="Image 3"
+            onclick="openModal('./헤어사진1.jpg')"
+          />
+          <img
+            src="./헤어사진2.jpg"
+            alt="Image 4"
+            onclick="openModal('./헤어사진2.jpg')"
+          />
+          <img
+            src="./헤어사진3.jpg"
+            alt="Image 5"
+            onclick="openModal('./헤어사진3.jpg')"
+          />
+          <img
+            src="./헤어사진4.jpg"
+            alt="Image 6"
+            onclick="openModal('./헤어사진4.jpg')"
+          />
+          <img
+            src="./헤어사진5.jpg"
+            alt="Image 7"
+            onclick="openModal('./헤어사진5.jpg')"
+          />
+          <img
+            src="./헤어사진6.jpg"
+            alt="Image 8"
+            onclick="openModal('./헤어사진6.jpg')"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="myModal">
+      <div class="modal-content" id="modalContent">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" id="modalImage" alt="Enlarged Image" />
+      </div>
+    </div>
+    <div id="mapcenter">
+      <div class="imgcontainer" id="modalContent">
         <h2 class="imgheading headAnimation headingAnimation">
           <span class="imgheading--line" tabindex="0">소개글</span>
         </h2>
         <q tabindex="0">
-          Free Gallery를 통해서 저의 추억을 다른 사람들과 공유할 수 있어서
-          좋아요. 이제 편리하게 언제 어디서든 저의 추억을 볼 수 있어 이전보다
-          사진을 관리하기 편리해졌어요
+          안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
+          충분한 상담 후 고객님이 원하는 포인트를 정확히 캐치하고 제안해드릴게요
+          !
         </q>
       </div>
-      <div class="image-grid">
-        <!-- Add your image elements here -->
-        <img src="./가격.jpg" alt="Image 1" />
-        <img src="./가게.jpg" alt="Image 2" />
-        <img src="./헤어사진1.jpg" alt="Image 3" />
-        <img src="./헤어사진2.jpg" alt="Image 3" />
-        <img src="./헤어사진3.jpg" alt="Image 3" />
-        <img src="./헤어사진4.jpg" alt="Image 3" />
-        <img src="./헤어사진5.jpg" alt="Image 3" />
-        <img src="./헤어사진6.jpg" alt="Image 3" />
-
-        <!-- Add more images as needed -->
-      </div>
-    </section>
-  </div>
-    <div id="mapcenter">
-      <h3>오시는 길</h3>
       <div id="map"></div>
     </div>
-  </div>
-  
-  
-  <div id="darkModeToggle" class="menu-toggle">
-    <p id="toggleTheme"><img id="lightModeIcon" src="./Vision.svg" alt="라이트 모드"></p>
-    <p id="toggleTheme"><img id="darkModeIcon" src="./Vision2.svg" alt="다크 모드"></p>
-  </div>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="logo-container">
-      <span class="footer-heading">FREE GALLERY</span>
-      <img class="footerimg" src="./흰색로고.png" alt="">
-    </div>
-      <address class="footer-address"> 
-        <span>대구 수성구 청솔로2길 37 1층</span>
-        <p>
-          <img class="img2" src="./3호선.png" alt="" />어린이세상역 1번
-          출구에서 377m
-        </p>
-        <span
-          >TE
-          <a class="address__telephone" href="tel:0507-1376-7738"
-            >상담 전화 : 0507-1376-7738</a
-          ></span
-        >
-        <span
-          ><a class="address__link" href="mailto:dlwoabsdk@gmail.com"
-            >contact@freegallery.com</a
-          ></span
-        >
-      </address>
-      <div class="footer-sns">
-        <span class="footer-sns-heading">Follow us</span>
-        <div class="sns-wrap">
-          <a href="#Facebook"
-            ><span class="a11yHidden"
-              ><img src="./facebook.png" alt="" /></span
-          ></a>
-          <a href="#Instagram"
-            ><span class="a11yHidden"
-              ><img src="./instagram.png" alt="" /></span
-            ><i id="Instagram" class="fab fa-instagram"></i
-          ></a>
-          <a href="#Github"
-            ><span class="a11yHidden"><img src="./github.png" alt="" /></span
-            ><i id="Github" class="fab fa-github"></i
-          ></a>
-          <a href="#Youtube"
-            ><span class="a11yHidden"><img src="./youtube.png" alt="" /></span
-            ><i id="Youtube" class="fab fa-youtube"></i
-          ></a>
-        </div>
-      </div>
-      <small class="footer-copyright"
-        >Copyright since © 2021 by Free Gallery CORPORATION ALL RIGHTS
-        RESERVED.</small
-      >
-    </div>
-  </footer>
 
-  <script src="./map.js"></script>
-  <script src="./dark.js"></script>
-</body>
+    <div id="darkModeToggle" class="menu-toggle">
+      <p id="toggleTheme">
+        <img id="lightModeIcon" src="./Vision.svg" alt="라이트 모드" />
+      </p>
+      <p id="toggleTheme">
+        <img id="darkModeIcon" src="./Vision2.svg" alt="다크 모드" />
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-container">
+          <span class="footer-heading">FREE GALLERY</span>
+          <img class="footerimg" src="./흰색로고.png" alt="" />
+        </div>
+        <address class="footer-address">
+          <span>대구 수성구 청솔로2길 37 1층</span>
+          <span>
+            <img class="img2" src="./3호선.png" alt="" />어린이세상역 1번
+            출구에서 377m
+          </span>
+          <span
+            >TE
+            <a class="address__telephone" href="tel:0507-1376-7738"
+              >상담 전화 : 0507-1376-7738</a
+            ></span
+          >
+          <span
+            ><a class="address__link" href="mailto:dlwoabsdk@gmail.com"
+              >contact@freegallery.com</a
+            ></span
+          >
+        </address>
+        <div class="footer-sns">
+          <span class="footer-sns-heading">Follow us</span>
+          <div class="sns-wrap">
+            <a href="#Facebook"
+              ><span class="a11yHidden"
+                ><img src="./facebook.png" alt="" /></span
+            ></a>
+            <a href="#Instagram"
+              ><span class="a11yHidden"
+                ><img src="./instagram.png" alt="" /></span
+              ><i id="Instagram" class="fab fa-instagram"></i
+            ></a>
+            <a href="#Github"
+              ><span class="a11yHidden"><img src="./github.png" alt="" /></span
+              ><i id="Github" class="fab fa-github"></i
+            ></a>
+            <a href="#Youtube"
+              ><span class="a11yHidden"><img src="./youtube.png" alt="" /></span
+              ><i id="Youtube" class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <small class="footer-copyright"
+          >Copyright since © 2021 by Free Gallery CORPORATION ALL RIGHTS
+          RESERVED.</small
+        >
+      </div>
+    </footer>
+
+    <script src="./map.js"></script>
+    <script src="./dark.js"></script>
+    <script src="./modal.js"></script>
+  </body>
 </html>
