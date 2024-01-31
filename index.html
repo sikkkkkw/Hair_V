@@ -30,19 +30,25 @@
         </ul>
       </nav>
     </header>
+    <div class="mainmg">
+      <div id="main">
+        <img class="img1" src="메인.png" alt="" />
+      </div>
+    </div>
     <section class="introduce">
       <div class="title">
         <h2 class="imgheading headAnimation headingAnimation">
-          <span class="imgheading--line" tabindex="0">사진</span>
+          <span class="imgheading--line" tabindex="0">소개글</span>
         </h2>
         <q tabindex="0">
           안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
           충분한 상담 후 고객님이 원하는 포인트를 정확히 캐치하고 제안해
           드릴게요 !
         </q>
+        <div class="titleimg"></div>
       </div>
     </section>
-    
+
     <section class="voice">
       <div class="imgcontainer">
         <h2 class="imgheading headAnimation headingAnimation">
@@ -58,7 +64,7 @@
         <div class="image-flex" id="imageFlex">
           <div class="flex-col">
             <img
-              src="./가격.jpg"
+              src="./가격.png"
               alt="Image 1"
               onclick="openModal('./가격.jpg')"
             />
@@ -74,19 +80,24 @@
           </div>
           <div class="flex-col">
             <img
-              src="./헤어사진1.jpg"
+              src="./마음시그니처.jpg"
               alt="Image 3"
               onclick="openModal('./헤어사진1.jpg')"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">
+              시그니처 레이어드<br />
+              레이어드컷, C컬펌, 레이어드펌, 밀크브라운, 애쉬그레이
+            </p>
           </div>
           <div class="flex-col">
             <img
-              src="./헤어사진2.jpg"
+              src="./마음레이어드.jpg"
               alt="Image 4"
               onclick="openModal('./헤어사진2.jpg')"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">
+              레이어드 스타일 <br />레이어드컷, 레이어드펌
+            </p>
           </div>
           <div class="flex-col">
             <img
@@ -130,57 +141,59 @@
       </div>
     </div>
 
-    <div class="shorts-container">
-      <div class="imgcontainer">
-        <h2 class="imgheading headAnimation headingAnimation">
-          <span class="imgheading--line" tabindex="0">동영상</span>
-        </h2>
-        <q tabindex="0">
-          안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
-          충분한 상담 후dwdwdwdwdwdwdwdwdwwdwd 고객님이 원하는 포인트를 정확히
-          캐치하고 제안해 드릴게요 !
-        </q>
-        <div class="videogrid" id="videoGrid">
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상1.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상2.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상3.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상4.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상5.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상6.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상7.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상8.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상9.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상10.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상11.mp4" type="video/mp4" />
-          </video>
-          <video class="shorts-video" controls>
-            <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
-          </video>
-          <!-- 영상추가 -->
-        </div>
-        <div class="button-flex">
-          <button id="loadMoreBtn" class="w-btn-neon2">더보기</button>
+    <div class="bg">
+      <div class="shorts-container">
+        <div class="imgcontainer">
+          <h2 class="imgheading headAnimation headingAnimation">
+            <span class="imgheading--line" tabindex="0">동영상</span>
+          </h2>
+          <q tabindex="0">
+            안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
+            충분한 상담 후dwdwdwdwdwdwdwdwdwwdwd 고객님이 원하는 포인트를 정확히
+            캐치하고 제안해 드릴게요 !
+          </q>
+          <div class="videogrid" id="videoGrid">
+            <video class="shorts-video" controls>
+              <source src="./video/메인.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상2.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상3.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상4.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상5.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상6.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상7.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상8.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상9.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상10.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상11.mp4" type="video/mp4" />
+            </video>
+            <video class="shorts-video" controls>
+              <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
+            </video>
+            <!-- 영상추가 -->
+          </div>
+          <div class="button-flex">
+            <button id="loadMoreBtn" class="w-btn-neon2">더보기</button>
+          </div>
         </div>
       </div>
     </div>
@@ -201,6 +214,31 @@
       </div>
       <div id="map"></div>
     </div>
+    <!-- <section class="reviews">
+      <div class="imgcontainer">
+        <div class="review-text">
+          <h2 class="imgheading headAnimation headingAnimation">
+            <span class="imgheading--line" tabindex="0">리뷰 후기</span>
+          </h2>
+          <div class="review-carousel-container">
+            <div class="review-flex" id="reviewCarousel">
+              <div id="review1" class="review-image">
+                <img src="./헤어사진1.jpg" alt="리뷰 1 이미지" />
+                <q tabindex="0">리뷰 1: 여기에 리뷰 텍스트를 추가하세요.</q>
+              </div>
+              <div id="review2" class="review-image">
+                <img src="./헤어사진2.jpg" alt="리뷰 2 이미지" />
+                <q tabindex="0">리뷰 2: 여기에 리뷰 텍스트를 추가하세요.</q>
+              </div>
+              <div id="review3" class="review-image">
+                <img src="./헤어사진3.jpg" alt="리뷰 3 이미지" />
+                <q tabindex="0">리뷰 3: 여기에 리뷰 텍스트를 추가하세요.</q>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <div id="darkModeToggle" class="menu-toggle">
       <p id="toggleTheme">
@@ -267,5 +305,6 @@
     <script src="./dark.js"></script>
     <script src="./modal.js"></script>
     <script src="./video.js"></script>
+    <script src="review-carousel.js"></script>
   </body>
 </html>
