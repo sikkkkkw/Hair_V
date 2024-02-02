@@ -294,7 +294,6 @@ section {
 }
 
 .short-container q {
-  /* max-width: 600px; Adjust as needed */
   margin: 15px 0;
 }
 
@@ -683,10 +682,11 @@ section {
   }
   .videogrid {
     display: grid;
-    grid-template-columns: repeat(5, 220px);
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
     justify-content: space-around;
   }
+
   .reviews {
     display: flex;
     justify-content: center;

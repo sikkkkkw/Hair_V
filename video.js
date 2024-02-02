@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const videoGrid = document.getElementById("videoGrid");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
-  const videosPerPage = 5;
-  const videosPerLoad = 5;
+  const videosPerPage = 6;
+  const videosPerLoad = 6;
   let totalVideos = 12;
 
   function showVideos(startIndex, endIndex) {
