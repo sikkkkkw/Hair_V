@@ -38,9 +38,9 @@
     <div class="mainmg">
       <div id="main">
         <div class="carousel">
-          <img class="img1" src="./image/메인.png" alt="" />
-          <img class="img1" src="./image/메인.png" alt="" />
-          <img class="img1" src="./image/메인.png" alt="" />
+          <img class="img1" src="./image/메인1.png" alt="" />
+          <img class="img1" src="./image/메인2.png" alt="" />
+          <img class="img1" src="./image/메인3.png" alt="" />
           <!-- Add more images as needed -->
         </div>
       </div>
@@ -102,7 +102,7 @@
             <img
               src="./image/가격.png"
               alt="Image 1"
-              onclick="openModal('./가격.jpg')"
+              onclick="openModal(`./image/가격.jpg`)"
             />
             <p class="img-title">헤어브이 가격</p>
           </div>
@@ -116,12 +116,19 @@
           </div>
           <div class="flex-col">
             <img
-              src="./image/마음시그니처.jpg"
+              src="./image/마음 빌드펌.jpg"
               alt="Image 3"
+              onclick="openModal('./마음 빌드펌.jpg')"
+            />
+            <p class="img-title">레이어드컷, 레이어드펌</p>
+          </div>
+          <div class="flex-col">
+            <img
+              src="./image/마음시그니처.jpg"
+              alt="Images"
               onclick="openModal('./헤어사진1.jpg')"
             />
             <p class="img-title">
-              시그니처 레이어드<br />
               레이어드컷, C컬펌, 레이어드펌, 밀크브라운, 애쉬그레이
             </p>
           </div>
@@ -129,7 +136,7 @@
             <img
               src="./image/마음레이어드.jpg"
               alt="Image 4"
-              onclick="openModal('./헤어사진2.jpg')"
+              onclick="openModal('./image/마음레이어드.jpg')"
             />
             <p class="img-title">
               레이어드 스타일 <br />레이어드컷, 레이어드펌
@@ -139,7 +146,7 @@
             <img
               src="./image/헤어사진3.jpg"
               alt="Image 5"
-              onclick="openModal('./헤어사진3.jpg')"
+              onclick="openModal('./image/헤어사진3.jpg')"
             />
             <p class="img-title">헤어브이 가격</p>
           </div>
@@ -259,7 +266,7 @@
         <div id="map"></div>
       </div>
     </div>
-    <section class="reviews">
+    <!-- <section class="reviews">
       <div class="imgcontainer">
         <div class="review-text">
           <h2 class="imgheading headAnimation headingAnimation">
@@ -283,7 +290,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <div id="darkModeToggle" class="menu-toggle">
       <p id="toggleTheme">
