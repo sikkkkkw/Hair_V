@@ -28,10 +28,10 @@
         </label>
 
         <ul id="toggle_menu">
-          <li><a href="#">스타일리스트</a></li>
-          <li><a href="#"> 사진 </a></li>
-          <li><a href="#">동영상</a></li>
-          <li><a href="#">오시는 길</a></li>
+          <li><a href="#style-section">스타일리스트</a></li>
+          <li><a href="#photo-section">사진</a></li>
+          <li><a href="#video-section">동영상</a></li>
+          <li><a href="#directions-section">오시는 길</a></li>
         </ul>
       </nav>
     </header>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="bg">
+    <div class="bg " id="style-section">
       <section class="introduce">
         <div class="title">
           <h2 class="imgheading headAnimation headingAnimation">
@@ -85,7 +85,7 @@
       </section>
     </div>
 
-    <section class="voice">
+    <section class="voice" id="photo-section">
       <div class="imgcontainer">
         <h2 class="imgheading headAnimation headingAnimation">
           <span class="imgheading--line" tabindex="0">사진</span>
@@ -104,59 +104,59 @@
               alt="Image 1"
               onclick="openModal(`./image/가격.jpg`)"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">헤어브이 가격표</p>
           </div>
           <div class="flex-col">
             <img
-              src="./image/가게.jpg"
+              src="./image/마음시그니처.jpg"
               alt="Image 2"
-              onclick="openModal('./가게.jpg')"
+              onclick="openModal('./image/마음시그니처.jpg')"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">시그니처 레이어드</p>
           </div>
           <div class="flex-col">
             <img
               src="./image/마음 빌드펌.jpg"
               alt="Image 3"
-              onclick="openModal('./마음 빌드펌.jpg')"
+              onclick="openModal('./image/마음 빌드펌2.jpg')"
             />
-            <p class="img-title">레이어드컷, 레이어드펌</p>
-          </div>
-          <div class="flex-col">
-            <img
-              src="./image/마음시그니처.jpg"
-              alt="Images"
-              onclick="openModal('./헤어사진1.jpg')"
-            />
-            <p class="img-title">
-              레이어드컷, C컬펌, 레이어드펌, 밀크브라운, 애쉬그레이
-            </p>
+            <p class="img-title">빌드펌</p>
           </div>
           <div class="flex-col">
             <img
               src="./image/마음레이어드.jpg"
-              alt="Image 4"
+              alt="Images"
               onclick="openModal('./image/마음레이어드.jpg')"
             />
             <p class="img-title">
-              레이어드 스타일 <br />레이어드컷, 레이어드펌
+              레이어드 스타일
             </p>
           </div>
           <div class="flex-col">
             <img
-              src="./image/헤어사진3.jpg"
-              alt="Image 5"
-              onclick="openModal('./image/헤어사진3.jpg')"
+              src="./image/젤리펌.jpg"
+              alt="Image 4"
+              onclick="openModal('./image/젤리펌.jpg')"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">
+              젤리펌
+            </p>
           </div>
           <div class="flex-col">
             <img
-              src="./image/헤어사진4.jpg"
-              alt="Image 6"
-              onclick="openModal('./헤어사진4.jpg')"
+              src="./image/마음중단발레이어드.jpg"
+              alt="Image 5"
+              onclick="openModal('./image/마음중단발레이어드.jpg')"
             />
-            <p class="img-title">헤어브이 가격</p>
+            <p class="img-title">중단발 레이어드</p>
+          </div>
+          <div class="flex-col">
+            <img
+              src="./image/레이어드펌1.jpg"
+              alt="Image 6"
+              onclick="openModal('./image/레이어드펌2.jpg')"
+            />
+            <p class="img-title">레이어드 펌</p>
           </div>
           <div class="flex-col">
             <img
@@ -184,8 +184,8 @@
       </div>
     </div>
 
-    <div class="bg">
-      <div class="shorts-container">
+    <div class="bg" id="video-section">
+      <div class="shorts-container" >
         <div class="imgcontainer">
           <h2 class="imgheading headAnimation headingAnimation">
             <span class="imgheading--line" tabindex="0">동영상</span>
@@ -253,7 +253,7 @@
     <!-- <div class="videosize">
       <div></div>
     </div> -->
-    <div id="mapcenter">
+    <div class="mapcenter" id="directions-section">
       <div class="imgcontainer" id="modalContent">
         <h2 class="imgheading headAnimation headingAnimation">
           <span class="imgheading--line" tabindex="0">소개글</span>
