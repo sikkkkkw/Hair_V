@@ -187,6 +187,7 @@ section {
   width: 100%;
   height: auto;
   overflow: hidden;
+  
 }
 .title h1 {
   margin-bottom: 10px;
@@ -196,6 +197,7 @@ section {
   justify-content: space-around;
   list-style: none;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 
