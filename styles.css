@@ -18,8 +18,8 @@ a {
   background-color: #f5f5f5;
 }
 html.dark {
-  background: #121212;
-  color: #bbb;
+  background: rgb(181,214,146);;
+  color: #343434;
 }
 
 html.dark a {
