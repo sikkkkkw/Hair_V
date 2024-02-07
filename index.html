@@ -13,11 +13,12 @@
   </head>
   <body>
     <header>
+      <div id="header-container">
       <div id="logohead">
         <img src="./image/로고.png" alt="Logo" />
       </div>
       <nav>
-        <p id="contact_number">상담전화 : 053-768-7738</p>
+        <p id="contact_number" class="fonts">상담전화 : 053-768-7738</p>
         <input type="checkbox" id="toggle_menu_btn" />
         <label id="toggle" for="toggle_menu_btn">
           <img
@@ -28,13 +29,15 @@
         </label>
 
         <ul id="toggle_menu">
-          <li><a href="#style-section">스타일리스트</a></li>
-          <li><a href="#photo-section">사진</a></li>
-          <li><a href="#video-section">동영상</a></li>
-          <li><a href="#directions-section">오시는 길</a></li>
+          <li  class="fonts18"><a href="#style-section">스타일리스트 </a></li>
+          <li  class="fonts18"><a href="#photo-section">이벤트/헤어</a></li>
+          <li  class="fonts18"><a href="#video-section">영상</a></li>
+          <li  class="fonts18"><a href="#directions-section">오시는 길</a></li>
         </ul>
       </nav>
+    </div>
     </header>
+
     <div class="mainmg">
       <div id="main">
         <div class="carousel">
@@ -51,32 +54,29 @@
           <h2 class="imgheading headAnimation headingAnimation">
             <span class="imgheading--line" tabindex="0">스타일리스트</span>
           </h2>
-          <h1 tabindex="0">#Instagram</h1>
+          <h1 tabindex="0">Instagram</h1>
           <div class="insta">
             <div class="instatext">
               <a href="https://www.instagram.com/hair_v__official/">
-                <h3>Hair.V</h3>
-                <p>
-                  <img
-                    src="./image/instagram logo.png"
-                    alt=""
-                  />hair_v__official
+                <h1 class="fonts">Hair.V</h1>
+                <p class="fonts18">
+                 #hair_v__official
                 </p>
               </a>
             </div>
-            <div>
+            <div class="instatext">
               <a href="https://www.instagram.com/hair_v.maeum/">
-                <h3>마음 원장</h3>
-                <p>
-                  <img src="./image/instagram logo.png" alt="" />hair_v.maeum
+                <h1 class="fonts">마음 원장</h1>
+                <p class="fonts18">
+                  #hair_v.maeum
                 </p>
               </a>
             </div>
-            <div>
+            <div class="instatext">
               <a href="https://www.instagram.com/hair_v.maeum/">
-                <h3>예원 디자이너</h3>
-                <p>
-                  <img src="./image/instagram logo.png" alt="" />hair_v__yeccong
+                <h1 class="fonts">예원 디자이너</h1>
+                <p class="fonts18">
+                  #hair_v__yeccong
                 </p>
               </a>
             </div>
@@ -88,10 +88,10 @@
     <section class="voice" id="photo-section">
       <div class="imgcontainer">
         <h2 class="imgheading headAnimation headingAnimation">
-          <span class="imgheading--line" tabindex="0">사진</span>
+          <span class="imgheading--line" tabindex="0">이벤트/헤어</span>
         </h2>
-        <q tabindex="0">
-          안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
+        <q tabindex="0" class="fonts20">
+          부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
           충분한 상담 후 고객님이 원하는 포인트를 정확히 캐치하고 제안해
           드릴게요 !
         </q>
@@ -100,12 +100,21 @@
         <div class="image-flex" id="imageFlex">
           <div class="flex-col">
             <img
+              src="./image/이벤트.png"
+              alt="Image 1"
+              onclick="openModal(`./image/이벤트.png`)"
+            />
+            <p class="img-title">EVENT 예원디자이너 40%할인 <br>이벤트</p>
+          </div>
+          <div class="flex-col">
+            <img
               src="./image/가격.png"
               alt="Image 1"
               onclick="openModal(`./image/가격.jpg`)"
             />
             <p class="img-title">헤어브이 가격표</p>
           </div>
+          
           <div class="flex-col">
             <img
               src="./image/번헤어1.jpg"
@@ -140,6 +149,14 @@
           </div>
           <div class="flex-col">
             <img
+              src="./image/시스루댄디.jpg"
+              alt="Image 8"
+              onclick="openModal('./image/시스루댄디.jpg')"
+            />
+            <p class="img-title">시스루댄디펌</p>
+          </div>
+          <div class="flex-col">
+            <img
               src="./image/마음레이어드.jpg"
               alt="Images"
               onclick="openModal('./image/마음레이어드.jpg')"
@@ -157,6 +174,22 @@
             <p class="img-title">
               젤리펌
             </p>
+          </div>
+          <div class="flex-col">
+            <img
+              src="./image/가르마펌.jpg"
+              alt="Image 8"
+              onclick="openModal('./image/가르마펌.jpg')"
+            />
+            <p class="img-title">가르마펌</p>
+          </div>
+          <div class="flex-col">
+            <img
+              src="./image/리프컷.jpg"
+              alt="Image 8"
+              onclick="openModal('./image/리프컷.jpg')"
+            />
+            <p class="img-title">리프컷</p>
           </div>
           <div class="flex-col">
             <img
@@ -222,30 +255,6 @@
             />
             <p class="img-title">애즈펌</p>
           </div>
-          <div class="flex-col">
-            <img
-              src="./image/시스루댄디.jpg"
-              alt="Image 8"
-              onclick="openModal('./image/시스루댄디.jpg')"
-            />
-            <p class="img-title">시스루댄디펌</p>
-          </div>
-          <div class="flex-col">
-            <img
-              src="./image/가르마펌.jpg"
-              alt="Image 8"
-              onclick="openModal('./image/가르마펌.jpg')"
-            />
-            <p class="img-title">가르마펌</p>
-          </div>
-          <div class="flex-col">
-            <img
-              src="./image/리프컷.jpg"
-              alt="Image 8"
-              onclick="openModal('./image/리프컷.jpg')"
-            />
-            <p class="img-title">리프컷</p>
-          </div>
         </div>
       </div>
     </section>
@@ -260,12 +269,10 @@
       <div class="shorts-container" >
         <div class="imgcontainer">
           <h2 class="imgheading headAnimation headingAnimation">
-            <span class="imgheading--line" tabindex="0">동영상</span>
+            <span class="imgheading--line" tabindex="0">영상</span>
           </h2>
-          <q tabindex="0">
-            안녕하세요 부담스럽지 않고,자연스러움을 추구하는 헤어브이 입니다!
-            충분한 상담 후dwdwdwdwdwdwdwdwdwwdwd 고객님이 원하는 포인트를 정확히
-            캐치하고 제안해 드릴게요 !
+          <q tabindex="0" class="fonts20">
+            당신만의 숨겨진 스타일을 찾아 드릴게요❤
           </q>
           <div class="videogrid" id="videoGrid">
             <video class="shorts-video" controls>
@@ -305,18 +312,18 @@
               <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
             </video>
             <video class="shorts-video" controls>
-              <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
+              <source src="./video/헤어브이영상1.mp4" type="video/mp4" />
             </video>
             <video class="shorts-video" controls>
               <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
             </video>
             <video class="shorts-video" controls>
-              <source src="./video/헤어브이영상12.mp4" type="video/mp4" />
+              <source src="./video/헤어브이영상13.mp4" type="video/mp4" />
             </video>
             <!-- 영상추가 -->
           </div>
           <div class="button-flex">
-            <button id="loadMoreBtn" class="w-btn-neon2">더보기</button>
+            <button id="loadMoreBtn" class="fonts"> 영상 더보기</button>
           </div>
         </div>
       </div>
@@ -328,27 +335,27 @@
     <div class="mapcenter" id="directions-section">
       <div class="imgcontainer" id="modalContent">
         <h2 class="imgheading headAnimation headingAnimation">
-          <span class="imgheading--line" tabindex="0">소개글</span>
+          <span class="imgheading--line" tabindex="0">오시는 길</span>
         </h2>
         <div id="map"></div>
         <div class="maptextflex">
           <div class="maptext">
-            <h3>주소</h3>
-            <span> <b>도로명 :</b>  대구 수성구 청솔로2길 37 1층</span>
-            <span> <b>지번 :</b> 황금동 691-3</span>
-            <span> <b>우편번호 :</b> 42144</span>
+            <h2 class="fonts">주소</h2>
+            <span class="fonts"> <b>도로명 :</b>  대구 수성구 청솔로2길 37 1층</span>
+            <span class="fonts"> <b>지번 :</b> 황금동 691-3</span>
+            <span class="fonts"> <b>우편번호 :</b> 42144</span>
           </div>
           <div class="maptext">
-            <h3>영업시간</h3>
-            <span> <b>화~수 :</b> 11:00 ~ 20:00</span>
-            <span> <b>월 :</b> 정기휴무(매주 월요일)</span>
-            <span style="color: #000;"><a href="https://map.naver.com/p/entry/place/1511330395?c=15.00,0,0,0,dh"><b>예약 :</b> 클릭<img style="width: 16px;" src="./image/click.png" alt=""></span></a>
+            <h2 class="fonts">영업시간</h2>
+            <span class="fonts"> <b>화~수 :</b> 11:00 ~ 20:00</span>
+            <span class="fonts"> <b>월 :</b> 정기휴무(매주 월요일)</span>
+            <span class="fonts" style="color: #000;"><a href="https://map.naver.com/p/entry/place/1511330395?c=15.00,0,0,0,dh"><b>예약 :</b> 클릭<img style="width: 12px;" src="./image/click.png" alt=""></span></a>
           </div> 
           <div class="maptext">
-            <h3>편의시설</h3>
-            <span> 건물 내 무료 주차</span>
-            <span> 무선 인터넷 </span>
-            <span>  메이크업</span>
+            <h2 class="fonts">편의시설</h2>
+            <span class="fonts"> 건물 내 무료 주차</span>
+            <span class="fonts"> 무선 인터넷 </span>
+            <span class="fonts">  메이크업</span>
           </div>
       </div>
       </div>
@@ -390,29 +397,29 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="logo-container">
-          <span class="footer-heading">FREE GALLERY</span>
+          <span class="footer-heading ">FREE GALLERY</span>
           <img class="footerimg" src="./image/흰색로고.png" alt="" />
         </div>
         <address class="footer-address">
-          <span>대구 수성구 청솔로2길 37 1층</span>
-          <span>
+          <span class="fonts">대구 수성구 청솔로2길 37 1층</span>
+          <span class="fonts">
             <img class="img2" src="./image/3호선.png" alt="" />어린이세상역 1번
             출구에서 377m
           </span>
-          <span
+          <span class="fonts"
             >TE
-            <a class="address__telephone" href="tel:0507-1376-7738"
+            <a class="address__telephone"  href="tel:0507-1376-7738"
               >상담 전화 : 053-768-7738</a
             ></span
           >
-          <span
-            ><a class="address__link" href="mailto:dlwoabsdk@gmail.com"
+          <span class="fonts"
+            ><a class="address__link"  href="mailto:gksmsla92@g.yju.ac.kr"
               >contact@freegallery.com</a
             ></span
           >
         </address>
         <div class="footer-sns">
-          <span class="footer-sns-heading">Follow us</span>
+          <h1 class="footer-sns-heading ">Follow us</h1>
           <div class="sns-wrap">
             <a href="#Facebook"
               ><span class="a11yHidden"
@@ -448,5 +455,6 @@
     <script src="./video.js"></script>
     <script src="./c.js"></script>
     <script src="review-carousel.js"></script>
+    <script src="headerscroll.js"></script>
   </body>
 </html>

@@ -26,6 +26,13 @@ html.dark a {
   color: #3ea6ff;
 }
 /* 헤더 */
+#header-container {
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Adjust the background color as needed */
+}
+
 #logohead {
   /* background-color: #000; */
   display: flex;
@@ -33,11 +40,18 @@ html.dark a {
   justify-content: center;
   height: 90px;
   overflow: hidden;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
 }
 #logohead img {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+.scrolled #logohead {
+  transform: translateY(-100%);
+}
+
+
 
 header nav input#toggle_menu_btn {
   /*모바일 모드에서 토글버튼 숨김 */
@@ -63,13 +77,13 @@ header nav input#toggle_menu_btn:checked ~ label#toggle img {
 }
 header nav ul#toggle_menu li {
   border-bottom: 1px solid #576979;
-  text-align: center;
+  text-align:start;
   padding: 15px;
   overflow: hidden;
-  background-color: #777;
+  background-color: #222;
 }
 #toggle_menu a{
-  color: #000;
+  color: #fff;
 }
 
 #toggle_menu a:hover {
@@ -93,6 +107,9 @@ header nav input#toggle_menu_btn:checked ~ ul#toggle_menu {
 }
 header nav label#toggle img {
   transition: transform 0.5s; /* 이미지에 대한 변형 트랜지션 추가 */
+}
+.nav_img{
+  color: #fff;
 }
 section {
   padding: 50px;
@@ -129,10 +146,10 @@ section {
 /* 상담전화 */
 #contact_number {
   position: absolute;
-  top: 3;
+  /* top: 3; */
   right: 0;
   color: #fff;
-  margin-top: 12px; /* 필요한 경우 간격 조정 */
+  margin-top: 16px; /* 필요한 경우 간격 조정 */
   margin-right: 10px; /* 필요한 경우 간격 조정 */
 }
 /* 메인 */
@@ -163,9 +180,12 @@ section {
   justify-content: center;
   align-items: center;
 }
+.instatext{
+  padding: 10px;
+}
 .title {
   width: 100%;
-  height: 200px;
+  height: auto;
   overflow: hidden;
 }
 .title h1 {
@@ -178,9 +198,7 @@ section {
   margin-top: 30px;
 }
 
-.insta img {
-  width: 25px;
-}
+
 
 /* 이미지 */
 .voice {
@@ -192,9 +210,7 @@ section {
 
 .imgcontainer {
   width: 100%;
-  /* max-width: 62.5rem; */
-  /* min-width: 20rem; */
-  padding: 50px 30px;
+
   overflow: hidden;
   margin-bottom: 9px;
 }
@@ -232,7 +248,7 @@ section {
 .image-flex img {
   width: 300px;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -247,9 +263,12 @@ section {
   left: 0;
   right: 5px;
   text-align: left;
+  font-size: 18px;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px; /* Increased padding for better readability */
   transition: opacity 0.3s ease, padding 0.3s ease; /* Added padding transition */
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
 }
 
 .flex-col:hover .img-title {
@@ -319,7 +338,7 @@ section {
 
 .videogrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 변경된 부분: 한 행에 2개의 열 */
+  grid-template-columns: repeat(3, 1fr); /* 변경된 부분: 한 행에 2개의 열 */
   grid-gap: 10px;
   margin-top: 20px;
   width: 100%; /* 변경된 부분: 100%로 설정 */
@@ -399,14 +418,15 @@ section {
 .maptextflex{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+
   
 }
 .maptext{
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 99px;
 }
 
 /* 푸터 */
@@ -627,13 +647,15 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    flex-wrap: wrap;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    padding: 20px;
   }
   .maptext{
     display: flex;
     flex-direction: column;
     width: 300px;
+    gap: 10px;
   }
 
   /* 다크모드 */
@@ -711,10 +733,10 @@ section {
     
   }
   .image-flex img {
-    width: 270px;
-    height: 350px;
-    border-radius: 20px;
-    /* margin-right: 10px; */
+    width: 300px;
+    height: 370px;
+    border-radius: 14px;
+    margin-right: 10px;
     flex-shrink: 0;
   }
   .bg {
@@ -757,7 +779,7 @@ section {
   }
   .shorts-video {
     border-radius: 5px;
-    width: 190px;
+    width: 100%;
     height: auto;
     border: none;
 
@@ -953,4 +975,26 @@ section {
     margin-right: 2px;
     height: auto;
   }
+}
+.fonts{
+
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+}
+.fonts20{
+  font-size: 20px;
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+}
+.fonts18{
+  font-size: 18px;
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+}
+/* 폰트 */
+@font-face {
+  font-family: 'NIXGONM-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
