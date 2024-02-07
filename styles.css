@@ -81,14 +81,17 @@ header nav ul#toggle_menu li {
   padding: 15px;
   overflow: hidden;
   background-color: #222;
+
 }
 #toggle_menu a{
   color: #fff;
+  
 }
 
 #toggle_menu a:hover {
   color: #007bff; /* 호버 시의 색상 변경 */
   border-bottom: #007bff;
+
 }
 #toggle_menu a:hover::after {
   content: "";
