@@ -18,7 +18,7 @@ a {
   background-color: #f5f5f5;
 }
 html.dark {
-  background: rgb(214,230,245);;
+  background: rgb(214, 230, 245);
   color: #343434;
 }
 
@@ -51,8 +51,6 @@ html.dark a {
   transform: translateY(-100%);
 }
 
-
-
 header nav input#toggle_menu_btn {
   /*모바일 모드에서 토글버튼 숨김 */
   display: none;
@@ -72,26 +70,23 @@ header nav ul#toggle_menu {
   top: 70px;
 }
 
-header nav input#toggle_menu_btn:checked ~ label#toggle img {
-  transform: rotate(90deg); /* 이미지도 45도 회전시킴 */
-}
+/* header nav input#toggle_menu_btn:checked ~ label#toggle img {
+  transform: rotate(90deg); 이미지도 45도 회전시킴
+} */
 header nav ul#toggle_menu li {
   border-bottom: 1px solid #576979;
-  text-align:start;
+  text-align: start;
   padding: 15px;
   overflow: hidden;
   background-color: #222;
-
 }
-#toggle_menu a{
+#toggle_menu a {
   color: #fff;
-  
 }
 
 #toggle_menu a:hover {
   color: #007bff; /* 호버 시의 색상 변경 */
   border-bottom: #007bff;
-
 }
 #toggle_menu a:hover::after {
   content: "";
@@ -111,7 +106,7 @@ header nav input#toggle_menu_btn:checked ~ ul#toggle_menu {
 header nav label#toggle img {
   transition: transform 0.5s; /* 이미지에 대한 변형 트랜지션 추가 */
 }
-.nav_img{
+.nav_img {
   color: #fff;
 }
 section {
@@ -183,14 +178,13 @@ section {
   justify-content: center;
   align-items: center;
 }
-.instatext{
+.instatext {
   padding: 10px;
 }
 .title {
   width: 100%;
   height: auto;
   overflow: hidden;
-  
 }
 .title h1 {
   margin-bottom: 10px;
@@ -202,8 +196,6 @@ section {
   margin-top: 30px;
   flex-wrap: wrap;
 }
-
-
 
 /* 이미지 */
 .voice {
@@ -272,8 +264,9 @@ section {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 15px; /* Increased padding for better readability */
   transition: opacity 0.3s ease, padding 0.3s ease; /* Added padding transition */
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+  font-family: "NIXGONM-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff")
+    format("woff");
 }
 
 .flex-col:hover .img-title {
@@ -408,7 +401,6 @@ section {
   overflow: hidden;
 }
 #map {
-  
   width: 100%;
   max-width: 100%;
   height: 400px;
@@ -421,14 +413,12 @@ section {
   text-align: left;
   margin-right: auto;
 }
-.maptextflex{
+.maptextflex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  
 }
-.maptext{
+.maptext {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -649,7 +639,7 @@ section {
     margin-top: 10px;
     /* margin-bottom: 20px; */
   }
-  .maptextflex{
+  .maptextflex {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -657,7 +647,7 @@ section {
     /* flex-wrap: wrap; */
     padding: 20px;
   }
-  .maptext{
+  .maptext {
     display: flex;
     flex-direction: column;
     width: 260px;
@@ -674,7 +664,6 @@ section {
     border-radius: 50%;
     cursor: pointer;
     z-index: 999;
-  
   }
 
   #lightModeIcon {
@@ -690,7 +679,7 @@ section {
   }
   /* 이미지파트 */
   .voice {
-    padding:70px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -699,7 +688,7 @@ section {
 
   .imgcontainer {
     width: 100%;
-    
+
     /* max-width: 62.5rem; */
     /* min-width: 20rem; */
     padding: 0 30px;
@@ -708,7 +697,6 @@ section {
   }
 
   .imgheading {
-    
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -730,13 +718,12 @@ section {
   .image-flex-scrollable {
     overflow-x: scroll;
     width: 80%;
-    
+
     padding: 10px;
     -webkit-overflow-scrolling: touch;
   }
   .image-flex {
     display: flex;
-    
   }
   .image-flex img {
     width: 300px;
@@ -767,7 +754,7 @@ section {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
     width: 100%;
-    
+
     justify-content: space-around;
   }
 
@@ -788,7 +775,6 @@ section {
     width: 100%;
     height: auto;
     border: none;
-
   }
   .button-flex {
     width: 100%;
@@ -982,25 +968,28 @@ section {
     height: auto;
   }
 }
-.fonts{
-
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+.fonts {
+  font-family: "NIXGONM-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff")
+    format("woff");
 }
-.fonts20{
+.fonts20 {
   font-size: 20px;
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+  font-family: "NIXGONM-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff")
+    format("woff");
 }
-.fonts18{
+.fonts18 {
   font-size: 18px;
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+  font-family: "NIXGONM-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff")
+    format("woff");
 }
 /* 폰트 */
 @font-face {
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+  font-family: "NIXGONM-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
