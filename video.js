@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadMoreBtn = document.getElementById("loadMoreBtn");
   const videosPerPage = 6;
   const videosPerLoad = 6;
-  let totalVideos = 12;
+  let totalVideos = 18;
 
   function showVideos(startIndex, endIndex) {
     const videos = document.querySelectorAll(".shorts-video");
